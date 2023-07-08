@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.20);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: var(--fz-base);
+  color: var(--color-white);
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: inherit;
+    padding: 0 15px;
+  }
+
+  &__link.active {
+    background: #004AF2;
+  }
+}
+
