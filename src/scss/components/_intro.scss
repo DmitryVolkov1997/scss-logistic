@@ -1,0 +1,41 @@
+.intro {
+  background: url("../img/intro-bg.jpg") no-repeat center / cover;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 600px;
+  }
+
+  &__text {
+    text-align: right;
+    margin: 0 50px 50px;
+  }
+
+  &__countries {
+    color: #FFF;
+  }
+
+  &__title {
+    color: rgba(255, 255, 255, 0.80);
+    text-align: right;
+    font-family: "LatoBold", sans-serif;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "&";
+      right: 12px;
+      top: 37px;
+      color: rgba(255, 255, 255, 0.20);
+      font-family: "LatoBlack", sans-serif;
+      font-size: 170px;
+      line-height: 100px;
+    }
+  }
+}

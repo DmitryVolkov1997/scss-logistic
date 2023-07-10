@@ -1,0 +1,99 @@
+.form-request {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+  background: #004AF2;
+  color: var(--color-white);
+  position: relative;
+  bottom: -30px;
+
+  &--intro {}
+
+  &__header {
+    border-radius: 5px 5px 0 0;
+    background: #033FC9;
+    padding: 20px 30px;
+  }
+
+  &__title {
+    font-family: "LatoBlack", sans-serif;
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 15px;
+  }
+
+  &__content {
+    padding: 30px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__group {
+    margin-bottom: 29px;
+  }
+
+  &__input {
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    padding: 0 15px 11px 45px;
+    color: #FFF;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    transition: border-bottom .22s ease-in-out;
+
+    &::placeholder {
+      font-family: inherit;
+      color: inherit;
+    }
+
+    &:focus {
+      border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+  }
+
+  &__input--user {
+    background: url("../img/svg/user.svg") no-repeat 15px 2px;
+  }
+
+  &__input--phone {
+    background: url("../img/svg/phone.svg") no-repeat 15px 2px;
+  }
+
+  &__input--email {
+    background: url("../img/svg/email.svg") no-repeat 15px 3.5px;
+  }
+
+  &__submit {
+  }
+}
+
+.btn {
+  padding: 11px 20px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color: var(--color-white);
+  font-family: "PTSansBold", sans-serif;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.btn--orange {
+  border-radius: 5px;
+  background: linear-gradient(90deg, #FF903E 0%, #FF2C2C 100%);
+}
+
+.btn-full {
+  width: 100%;
+}
