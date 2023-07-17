@@ -72,28 +72,6 @@
   &__input--email {
     background: url("../img/svg/email.svg") no-repeat 15px 3.5px;
   }
-
-  &__submit {
-  }
 }
 
-.btn {
-  padding: 11px 20px;
-  display: inline-block;
-  text-align: center;
-  cursor: pointer;
-  color: var(--color-white);
-  font-family: "PTSansBold", sans-serif;
-  font-size: 18px;
-  border: none;
-  outline: none;
-}
 
-.btn--orange {
-  border-radius: 5px;
-  background: linear-gradient(90deg, #FF903E 0%, #FF2C2C 100%);
-}
-
-.btn-full {
-  width: 100%;
-}

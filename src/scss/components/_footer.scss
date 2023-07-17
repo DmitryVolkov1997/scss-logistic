@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #F9F9F9;
+  padding: 40px 0;
+  background-image: url("../img/footer-bg-left.png"), url("../img/footer-bg-right.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right bottom;
+
+  &__logo {
+    margin-bottom: 25px;
+  }
+
+  &__address {
+    margin-bottom: 25px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+  }
+
+  &__nav-link {
+    color: #004AF2;
+    text-align: center;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__inner {
+    text-align: center;
+  }
+}

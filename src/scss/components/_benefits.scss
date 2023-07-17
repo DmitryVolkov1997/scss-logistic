@@ -1,0 +1,69 @@
+.benefits {
+  display: flex;
+  justify-content: space-between;
+
+  &__col {
+    width: 50%;
+  }
+}
+
+.benefits-list {
+  max-width: 370px;
+  background-image: linear-gradient(to bottom,
+    white 0, white 14px,
+    grey 14px, grey 34px);
+  background-size: 2px 32.5px;
+  background-repeat: repeat-y;
+  padding-left: 40px;
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+    left: -12px;
+    width: 25.714px;
+    height: 36px;
+    background-color: white;
+  }
+
+  &:before {
+    top: 0;
+    background-image: url("../img/svg/pin-gray.svg");
+  }
+
+  &:after {
+    bottom: 0;
+    background-image: url("../img/svg/pin-green.svg");
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    color: #2C2C2C;
+    font-family: "LatoBlack", sans-serif;
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: #585858;
+    font-family: "PTSansRegular", sans-serif;
+
+    p {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Перейти на 6 блок

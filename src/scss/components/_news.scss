@@ -1,0 +1,33 @@
+.news {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+
+  &__title {
+    color: #2C2C2C;
+    font-family: "PTSansBold", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &__item {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__date {
+    color: #6E6E6E;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 12px;
+  }
+}

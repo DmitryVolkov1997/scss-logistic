@@ -1,0 +1,57 @@
+.mission {
+  text-align: center;
+  padding: 60px 30px;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 30px;
+  position: relative;
+  margin-top: -50px;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 2px;
+    bottom: 0;
+  }
+
+  &:before {
+    left: 50%;
+    background: #004AF2;
+  }
+
+  &:after {
+    right: 50%;
+    background: #FC2C2B;
+  }
+
+  &__subtitle,
+  &__title {
+    text-transform: capitalize;
+  }
+
+  &__title {
+    color: #004AF2;
+    font-family: "LatoBold", sans-serif;
+    font-size: 30px;
+    margin-bottom: 7px;
+  }
+
+  &__subtitle {
+    color: #585858;
+    font-family: "LatoRegular", sans-serif;
+    font-size: 21px;
+  }
+}
+
+.mission-main__title {
+  color: rgba(0, 0, 0, 0.05);
+  font-family: "LatoBlack", sans-serif;
+  font-size: 90px;
+  text-transform: uppercase;
+  z-index: 5;
+  text-align: center;
+}
+

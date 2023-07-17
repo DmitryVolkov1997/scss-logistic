@@ -1,0 +1,94 @@
+.clients {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 77px;
+
+  &__logos {
+    width: 60%;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__reviews {
+    width: 40%;
+  }
+}
+
+.section--map {
+  background: url("../img/svg/map.svg") no-repeat left 221px top 158px;
+}
+
+.clients-love {
+  display: inline-block;
+  color: #464646;
+  font-size: 18px;
+  margin-left: 40px;
+  background: url("../img/svg/heart.svg") no-repeat left 20px top 0;
+  min-height: 47px;
+  padding-top: 5px;
+}
+
+.reviews {
+  &__item {
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: block;
+    border-radius: 100%;
+
+    img {
+      border-radius: 100%;
+      overflow: hidden;
+      border: 5px solid #FFF;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: -12px;
+      left: 4px;
+      background: url("../img/svg/lines.svg") no-repeat;
+      width: 92px;
+      height: 125px;
+      z-index: -1;
+    }
+  }
+
+  &__name {
+    color: #2C2C2C;
+    font-family: "LatoBlack", sans-serif;
+    font-size: 18px;
+  }
+
+  &__content {
+    p {
+      margin-bottom: 30px;
+    }
+
+    p:nth-child(1) {
+      text-indent: 1.3em;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
