@@ -1,11 +1,13 @@
 .footer {
   display: flex;
   justify-content: center;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   padding: 40px 0;
-  background-image: url("../img/footer-bg-left.png"), url("../img/footer-bg-right.png");
+  background-image: url("../img/footer-bg-left.png"),
+    url("../img/footer-bg-right.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left bottom, right bottom;
+  margin-top: auto;
 
   &__logo {
     margin-bottom: 25px;
@@ -22,7 +24,7 @@
   }
 
   &__nav-link {
-    color: #004AF2;
+    color: #004af2;
     text-align: center;
     font-family: "PTSansRegular", sans-serif;
     font-size: 12px;
@@ -35,5 +37,11 @@
 
   &__inner {
     text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    background-image: none;
   }
 }

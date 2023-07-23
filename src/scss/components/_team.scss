@@ -15,7 +15,7 @@
   }
 
   &__name {
-    color: #2C2C2C;
+    color: #2c2c2c;
     font-family: "LatoBlack", sans-serif;
     font-size: 18px;
     margin-bottom: 5px;
@@ -33,7 +33,7 @@
       height: 10px;
 
       &:hover {
-        fill: #004AF2;
+        fill: #004af2;
       }
     }
 
@@ -49,3 +49,13 @@
   }
 }
 
+@media (max-width: 991px) {
+  .team {
+    justify-content: space-around;
+
+    &__col {
+      max-width: 360px;
+      width: 100%;
+    }
+  }
+}

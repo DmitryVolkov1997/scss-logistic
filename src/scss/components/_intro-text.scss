@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.intro--text {
+  background: url("../img/text-bg.jpg") no-repeat center / cover;
+
+  .intro__inner {
+    height: 350px;
+  }
+}

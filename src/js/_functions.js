@@ -3,7 +3,7 @@
 
 // Определение операционной системы на мобильных
 import { mobileCheck } from "./functions/mobile-check";
-console.log(mobileCheck())
+console.log(mobileCheck());
 
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
@@ -21,7 +21,12 @@ console.log(mobileCheck())
 // import './functions/fix-fullheight';
 
 // Реализация бургер-меню
-// import { burger } from './functions/burger';
+import { burger } from "./functions/burger";
+import { handleClickNavLinks } from "./functions/nav-links";
+handleClickNavLinks();
+
+import { fixHeaderPosition } from "./functions/fixed-header";
+fixHeaderPosition();
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';

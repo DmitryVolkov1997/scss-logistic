@@ -2,7 +2,7 @@
   text-align: center;
   padding: 60px 30px;
   border-radius: 5px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.16);
   margin-bottom: 30px;
   position: relative;
@@ -19,12 +19,12 @@
 
   &:before {
     left: 50%;
-    background: #004AF2;
+    background: #004af2;
   }
 
   &:after {
     right: 50%;
-    background: #FC2C2B;
+    background: #fc2c2b;
   }
 
   &__subtitle,
@@ -33,7 +33,7 @@
   }
 
   &__title {
-    color: #004AF2;
+    color: #004af2;
     font-family: "LatoBold", sans-serif;
     font-size: 30px;
     margin-bottom: 7px;
@@ -55,3 +55,21 @@
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .mission {
+    margin-top: -25px;
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
+
+  .mission-main__title {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}

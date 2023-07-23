@@ -1,0 +1,128 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.9;
+  background: #000;
+  z-index: 110;
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2C2C2C;
+  display: none;
+
+  &.show {
+    display: flex;
+  }
+
+  &__logo {
+    margin-bottom: 12px;
+  }
+
+  &__inner {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    background: #FFF;
+    padding: 50px 25px;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 29px;
+  }
+
+  &__title {
+    color: #004AF2;
+    font-family: "LatoBlack", sans-serif;
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    color: #2C2C2C;
+    text-align: center;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  &__footer {
+    border-top: 3px solid #E8E8E8;
+    padding: 23px 0 0;
+    color: #2C2C2C;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  &__footer-title {
+    color: #2C2C2C;
+    font-family: "LatoBlack", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 7px;
+  }
+
+  &__contacts {
+    color: #2C2C2C;
+    font-family: "PTSansRegular", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+
+    p {
+      margin-bottom: 3px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: -20px;
+    right: -35px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform .22s ease-in;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.input--dark {
+  color: #2C2C2C;
+  border-bottom: 1px solid #E8E8E8;
+  transition: border-bottom .22s ease-in-out;
+
+  &:focus {
+    border-bottom: 1px solid rgba(#000, 0.2);
+  }
+
+  &.form__input--user {
+    background: url("../img/svg/user-black-icon.svg") no-repeat 15px 2px;
+  }
+
+  &.form__input--phone {
+    background: url("../img/svg/phone-black-icon.svg") no-repeat 15px 2px;
+  }
+
+  &.form__input--email {
+    background: url("../img/svg/email-black-icon.svg") no-repeat 15px 3.5px;
+  }
+}

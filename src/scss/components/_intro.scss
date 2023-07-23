@@ -15,16 +15,14 @@
   }
 
   &__countries {
-    color: #FFF;
+    color: #fff;
   }
 
   &__title {
-    color: rgba(255, 255, 255, 0.80);
+    color: rgba(255, 255, 255, 0.8);
     text-align: right;
     font-family: "LatoBold", sans-serif;
     font-size: 110px;
-    font-style: normal;
-    font-weight: 700;
     line-height: 100px;
     position: relative;
 
@@ -33,10 +31,45 @@
       content: "&";
       right: 12px;
       top: 37px;
-      color: rgba(255, 255, 255, 0.20);
+      color: rgba(255, 255, 255, 0.2);
       font-family: "LatoBlack", sans-serif;
       font-size: 170px;
       line-height: 100px;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .intro {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+
+    &__text {
+      order: -1;
+      margin: 95px 0px 0px;
+    }
+
+    &__title {
+      font-family: "LatoBold", sans-serif;
+      font-size: 100px;
+      line-height: 90px;
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .intro {
+    &__title {
+      font-family: "LatoBold", sans-serif;
+      font-size: 90px;
+      line-height: 80px;
+      margin-top: 40px;
     }
   }
 }

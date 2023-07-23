@@ -1,0 +1,55 @@
+.text {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 890px;
+  width: 100%;
+  margin-bottom: 50px;
+
+  p {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #004AF2;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h2, h3, h4, h5, h6 {
+    margin: 20px 0;
+    color: #2C2C2C;
+    font-family: "PTSansBold", sans-serif;
+    font-size: 24px;
+    line-height: 27px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ul, ol {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+  }
+}

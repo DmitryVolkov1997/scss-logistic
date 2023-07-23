@@ -1,8 +1,8 @@
 .services {
   border-radius: 5px;
-  background: #FFF;
+  background: #fff;
   padding: 30px 40px 95px;
-  filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.10));
+  filter: drop-shadow(0px 5px 30px rgba(0, 0, 0, 0.1));
   position: relative;
 
   &:after {
@@ -21,6 +21,7 @@
   &__inner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 40px;
   }
 
@@ -32,7 +33,7 @@
   }
 
   &__title {
-    color: #2C2C2C;
+    color: #2c2c2c;
     font-family: "LatoBlack", sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
@@ -48,26 +49,42 @@
   &__link {
     position: relative;
     padding-bottom: 10px;
-    transition: color .22s ease-in-out;
+    transition: color 0.22s ease-in-out;
 
     &:before {
       position: absolute;
       content: "";
       bottom: 0;
       left: 0;
-      background-color: #004AF2;
+      background-color: #004af2;
       height: 2px;
       width: 10px;
-      transition: all .22s ease-in-out;
+      transition: all 0.22s ease-in-out;
     }
 
     &:hover {
-      color: #FF3E2F;
+      color: #ff3e2f;
     }
 
     &:hover:before {
       width: 100%;
-      background-color: #FF3E2F;
+      background-color: #ff3e2f;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .services {
+    &__item {
+      max-width: 45%;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .services {
+    &__item {
+      max-width: 100%;
     }
   }
 }

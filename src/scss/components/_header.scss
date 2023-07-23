@@ -1,10 +1,9 @@
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.20);
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.22s ease-in;
 
   &__inner {
     display: flex;
@@ -35,7 +34,104 @@
   }
 
   &__link.active {
-    background: #004AF2;
+    background: #004af2;
   }
 }
 
+.header--dark {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.burger {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+
+  &::before,
+  &::after,
+  span:before,
+  span:after {
+    position: absolute;
+    content: "";
+    background-color: #ffffff;
+    width: 100%;
+    height: 3px;
+    left: 0;
+  }
+
+  &::before {
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 70%;
+    transform: rotate(0deg);
+    transition: all 0.22s ease-in;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  span:before {
+    top: 7px;
+  }
+
+  span:after {
+    top: 14.3px;
+  }
+
+  &.active::before {
+    transform: rotate(25deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    /* background: rgba(0, 0, 0, 0.9); */
+
+    &__inner {
+      height: 50px;
+    }
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      color: inherit;
+      padding: 0 15px;
+      height: 43px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .burger {
+    display: block;
+  }
+}
