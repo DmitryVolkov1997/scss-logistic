@@ -10,7 +10,7 @@
   //display: flex;
   justify-content: center;
   align-items: center;
-  color: #2C2C2C;
+  color: #2c2c2c;
   display: none;
 
   &.show {
@@ -25,7 +25,7 @@
     position: relative;
     max-width: 400px;
     width: 100%;
-    background: #FFF;
+    background: #fff;
     padding: 50px 25px;
   }
 
@@ -35,7 +35,7 @@
   }
 
   &__title {
-    color: #004AF2;
+    color: #004af2;
     font-family: "LatoBlack", sans-serif;
     font-size: 24px;
     line-height: 27px;
@@ -43,7 +43,7 @@
   }
 
   &__text {
-    color: #2C2C2C;
+    color: #2c2c2c;
     text-align: center;
     font-family: "PTSansRegular", sans-serif;
     font-size: 15px;
@@ -51,15 +51,15 @@
   }
 
   &__footer {
-    border-top: 3px solid #E8E8E8;
+    border-top: 3px solid #e8e8e8;
     padding: 23px 0 0;
-    color: #2C2C2C;
+    color: #2c2c2c;
     text-align: center;
     margin-top: 25px;
   }
 
   &__footer-title {
-    color: #2C2C2C;
+    color: #2c2c2c;
     font-family: "LatoBlack", sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -67,7 +67,7 @@
   }
 
   &__contacts {
-    color: #2C2C2C;
+    color: #2c2c2c;
     font-family: "PTSansRegular", sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -97,7 +97,11 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    transition: transform .22s ease-in;
+    transition: transform 0.22s ease-in;
+    z-index: 120;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       transform: rotate(90deg);
@@ -106,9 +110,9 @@
 }
 
 .input--dark {
-  color: #2C2C2C;
-  border-bottom: 1px solid #E8E8E8;
-  transition: border-bottom .22s ease-in-out;
+  color: #2c2c2c;
+  border-bottom: 1px solid #e8e8e8;
+  transition: border-bottom 0.22s ease-in-out;
 
   &:focus {
     border-bottom: 1px solid rgba(#000, 0.2);

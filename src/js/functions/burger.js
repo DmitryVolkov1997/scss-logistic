@@ -7,6 +7,11 @@
   function toggleMenu() {
     burger.classList.toggle("active");
     menu.classList.toggle("active");
-    document.body.classList.toggle("no-scroll");
+
+    if (document.body.classList.contains("active")) {
+      document.body.classList.remove("active");
+    } else {
+      document.body.classList.toggle("no-scroll");
+    }
   }
 })();

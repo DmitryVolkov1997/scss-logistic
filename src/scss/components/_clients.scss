@@ -21,7 +21,7 @@
 }
 
 .section--map {
-  background: url("../img/svg/map.svg") no-repeat left 221px top 158px;
+  background: url("../img/svg/map.svg") no-repeat left 28px top 148px;
 }
 
 .clients-love {
@@ -36,6 +36,7 @@
 
 .reviews {
   &__item {
+    padding: 10px 0 30px;
   }
 
   &__header {
@@ -114,4 +115,27 @@
   .section--map {
     background: none;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #c4c4c4;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #004af2;
+  border: 2px solid #e3dede;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -6px;
 }

@@ -1,5 +1,5 @@
 .news {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -30,6 +30,10 @@
     font-family: "PTSansRegular", sans-serif;
     font-size: 12px;
   }
+}
+
+.section.news--section {
+  margin-bottom: 70px;
 }
 
 @media (max-width: 1024px) {

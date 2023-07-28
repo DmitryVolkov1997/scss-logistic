@@ -86,5 +86,10 @@
     &__item {
       max-width: 100%;
     }
+
+    &:after {
+      font-size: 60px;
+      line-height: 60px;
+    }
   }
 }

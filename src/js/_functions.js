@@ -28,6 +28,12 @@ handleClickNavLinks();
 import { fixHeaderPosition } from "./functions/fixed-header";
 fixHeaderPosition();
 
+import { scrollSpy } from "./functions/scroll-spy";
+scrollSpy();
+
+import { handleShowModalWindow } from "./functions/modal-window";
+handleShowModalWindow();
+
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';
 
@@ -55,11 +61,20 @@ fixHeaderPosition();
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper, { Navigation, Pagination } from "swiper";
+Swiper.use([Navigation, Pagination]);
+const swiper = new Swiper("#swiper", {
+  slidesPerView: 1,
+  loop: true, // Для бесконечного цикла прокрутки слайдов
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  dynamicBullets: true,
+});
+
+import AOS from "aos";
+AOS.init();
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
